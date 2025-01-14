@@ -11,7 +11,7 @@ export async function myGeneratorGenerator(
   tree: Tree,
   options: MyGeneratorGeneratorSchema
 ) {
-  const projectRoot = `libs/${options.modelName}`;
+  const projectRoot = `libs/`;
   addProjectConfiguration(tree, options.modelName, {
     root: projectRoot,
     projectType: 'library',
