@@ -1,14 +1,16 @@
+import { <%= pascalCaseModelName %> } from "../interface/<%= modelName %>.interface";
+
 /** Product category list default criteria */
-const PRODUCT_CATEGORY_LIST_DEFAULT_CRITERIA = { page: 1, pageSize: 20 };
+const <%= snakeCase %>_DEFAULT_CRITERIA = { page: 1, pageSize: 20 };
 
 /** Product list component */
-export class <%= featuredName %> {
+export class <%= pascalCaseFeatursName %>Component {
     /** List of product categories */
     productCategories: ProductCategory[] = [];
 
     selectedProductCategory: ProductCategory;
 
-    loadProductCategories() {
+    load<%= pascalCaseModelName %>() {
         throw new Error('Not implemented');
     }
 }

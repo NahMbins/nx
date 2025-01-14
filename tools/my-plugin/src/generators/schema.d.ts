@@ -1,4 +1,4 @@
 export interface MyGeneratorGeneratorSchema {
   featuredName: string;
-  modelName: string
+  modelName: string;
 }
