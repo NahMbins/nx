@@ -21,7 +21,7 @@ export async function myGeneratorGenerator(
   function toSnakeCase(input: string): string {
     return input.replace(/-/g, '_').toUpperCase();
   }
-  
+
   const projectRoot = `libs/${options.modelName}`;
   addProjectConfiguration(tree, options.modelName, {
     root: projectRoot,
@@ -29,11 +29,11 @@ export async function myGeneratorGenerator(
     sourceRoot: `${projectRoot}/src`,
     targets: {},
   });
-  
+
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot,
                   {...options,
-                    pascalCaseModelName: toPascalCase(options.modelName), 
-                    pascalCaseFeatursName:toPascalCase(options.featuredName),
+                    pascalCaseModelName: toPascalCase(options.modelName),
+                    pascalCaseFeatureName:toPascalCase(options.featuredName),
                     snakeCase:toSnakeCase(options.featuredName)});
   await formatFiles(tree);
 }

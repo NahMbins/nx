@@ -4,7 +4,7 @@ import { <%= pascalCaseModelName %> } from "../interface/<%= modelName %>.interf
 const <%= snakeCase %>_DEFAULT_CRITERIA = { page: 1, pageSize: 20 };
 
 /** Product list component */
-export class <%= pascalCaseFeatursName %>Component {
+export class <%= pascalCaseFeatureName %>Component {
     /** List of product categories */
     productCategories: ProductCategory[] = [];
 
